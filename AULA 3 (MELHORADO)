@@ -1,0 +1,14 @@
+login = input("DIGITE SEU LOGIN(E-MAIL): ").strip()
+print ("\nVERIFICAÇÃO: ")
+if "@gmail" in login and ".com"in login:
+    print("LOGIN REALIZADO COM SUCESSO: ", login)
+elif ("@hotmail" in login and ".com" in login):
+    print("LOGIN REALIZADO COM SUCESSO: ", login)
+elif ("@Yahoo" in login and ".com" in login):
+    print("LOGIN REALIZADO COM SUCESSO: ", login)
+elif ("@Outlook" in login and ".com" in login):
+    print("LOGIN REALIZADO COM SUCESSO: ",login)
+elif ("@mail.com" in login or "@email.com" in login):
+    print("LOGIN REALIZADO COM SUCESSO: ",login)
+else:
+    print("NÃO É POSSÍVEL FAZER LOGIN COM SEU E-MAIL\n--------\nELE NÃO FAZ PARTE DOS DOMINIOS ACEITOS PELO SITE")
