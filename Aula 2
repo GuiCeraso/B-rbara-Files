@@ -1,0 +1,14 @@
+nome = input("Digite o nome do dispositivo:")
+ip = int (input("Digite seu Endereço de IP:"))
+quantidade = int(input("Digite a quantidade de dispositivos:"))
+print ("\n---DADOS INFORMADOS---")
+print("NOME", nome)
+print("IP", ip)
+print("Quantidade de dispositivos", quantidade)
+#Classificação de rede
+if quantidade <5:
+    print("Classificação: Rede Pequena")
+elif quantidade <=10:
+    print("Classificação: Rede Média")
+else:
+    print("Classificação: Rede Grande")
