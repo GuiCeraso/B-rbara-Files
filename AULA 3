@@ -1,0 +1,7 @@
+login = input("Digite seu login (e-mail):").strip()
+print ("\nLOGIN:")
+if "@" in login and ".com"in login:
+    print("LOGIN REALIZADO COM SUCESSO")
+
+else:
+    print("NÃO FOI POSSÍVEL REALIZAR O LOGIN")
