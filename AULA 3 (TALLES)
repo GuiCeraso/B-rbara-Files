@@ -1,0 +1,8 @@
+login = input("Digite seu login (e-mail):").strip()
+print ("\nVERIFICAÇÃO:")
+if "@gmail" in login and ".com"in login:
+    print("LOGIN REALIZADO COM SUCESSO:", login)
+elif "@gmail" in login or ".com" in login:
+    print("COMPONENTES FALTANDO!!!")
+else:
+    print("NÃO FOI POSSÍVEL REALIZAR O LOGIN")
