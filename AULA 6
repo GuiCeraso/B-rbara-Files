@@ -1,0 +1,17 @@
+print("=== Soma até digitar 0 ===")
+soma = 0
+quantidade = 0
+while True:
+    numero = int(input("Digite um número: "))
+    if numero == 0:
+        break
+    soma += numero
+    quantidade += 1
+print("\nResultado final:")
+print("Soma:", soma)
+print("Quantidade de números:", quantidade)
+if quantidade > 0:
+    media = soma / quantidade
+    print("Média:", media)
+else:
+    print("Não é possível calcular a média (nenhum número foi digitado)")
