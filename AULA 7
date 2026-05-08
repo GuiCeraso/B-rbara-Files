@@ -14,7 +14,7 @@ while True:
         print("\n-------\nLOGIN INCORRETO:", login)
         break
     else: 
-        print("-----LOGIN E SENHA INCORRETOS------")
+        print("-----LOGIN E SENHA INCORRETOS-----")
         print("LOGIN:", login)
         print("SENHA:", senha)
         break
