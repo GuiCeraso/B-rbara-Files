@@ -7,3 +7,9 @@ dolares = reais / conversao
 print("Valor em Dólares: US$", dolares)
 --------------------------------------------------------------------------------------------------------------------------------
 Verificação de Paridade
+numero = int(input("Digite um número inteiro: "))
+
+if numero % 2 == 0:
+    print("\n O Número é par!")
+else:
+    print("\n O Número é ímpar!")
