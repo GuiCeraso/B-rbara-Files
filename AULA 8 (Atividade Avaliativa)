@@ -13,3 +13,18 @@ if numero % 2 == 0:
     print("\n O Número é par!")
 else:
     print("\n O Número é ímpar!")
+--------------------------------------------------------------------------------------------------------------------------------
+3) Média de Aprovação 
+nota1 = float(input("Digite a primeira nota: "))
+nota2 = float(input("Digite a segunda nota: "))
+
+media = (nota1 + nota2) / 2
+
+print("Média:", media)
+
+if media >= 7.0:
+    print("Aprovado!")
+else:
+    print("Reprovado!")
+------------------------------------------------------------------------------------------------------------------------------
+4) Classificação de Atletas
