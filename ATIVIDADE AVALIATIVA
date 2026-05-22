@@ -1,9 +1,0 @@
-1) Conversor de moedas
-reais = float(input("Digite o valor em Reais: "))
-conversao = float(input("Digite a cotação do Dólar: "))
-
-dolares = reais / conversao
-
-print("Valor em Dólares: US$", dolares)
---------------------------------------------------------------------------------------------------------------------------------
-2) Verificação de Paridade
