@@ -1,0 +1,54 @@
+1) VALIDAÇÃO DE ACESSO
+login_correto = "admin"
+senha_correta = 1234
+login = input("DIGITE SEU LOGIN: ") 
+senha = int(input("DIGITE SUA SENHA: "))
+if login == login_correto and senha==senha_correta:
+    print("VOCÊ ENTROU!!")
+elif login == login_correto and senha != senha_correta:
+    print("SENHA INCORRETA!")
+elif login != login_correto and senha == senha_correta:
+    print("LOGIN INCORRETO!")
+else:
+    print("LOGIN E SENHA ERRADOS!")
+------------------------------------------------------------------------------------------------------------------------------
+2) ÍNDICE DE MASSA CORPORAL
+peso = float(input("DIGITE SEU PESO(KG):"))
+altura = float(input("DIGITE SUA ALTURA:"))
+IMC = peso/altura**2 
+if IMC <18.5:
+    print("\nABAIXO DO PESO")
+elif IMC <24.9:
+    print("\nPESO NORMAL")
+else:
+    print("\nACIMA DO PESO")
+------------------------------------------------------------------------------------------------------------------------------
+3) REAJUSTE DE SALÁRIO
+salario = float(input("DIGITE SEU SALÁRIO ATUAL: R$"))
+if salario <=1500:
+    percentual =20
+    aumento = salario * 0.20
+elif salario <= 3000:
+    percentual =15
+    aumento = salario *0.15
+else:
+    percentual = 10
+    aumento = salario * 0.10
+novo_salario =salario+aumento
+print("Salário antigo: R$", salario)
+print("Percentual de aumento: ",percentual,"%")
+print("Novo salário: R$", novo_salario)
+------------------------------------------------------------------------------------------------------------------------------
+4) ANÁLISE DE NOTAS
+nota1 = float(input("DIGITE A PRIMEIRA NOTA: "))
+nota2 = float(input("DIGITE A SEGUNDA NOTA: "))
+presenca = int(input("DIGITE A FREQUENCIA: "))
+media = nota1+nota2/2
+if media >= 7.0 and presenca >= 75:
+    print("APROVADO!!!")
+elif media >= 7.0 and presenca <75:
+    print("REPROVADO POR FALTA!!!")
+elif media < 7.0 and presenca >= 75:
+    print("REPROVADO POR NOTA!!!")
+else:
+    print("REPROVADO POR NOTA E PRESENÇA!!!")
