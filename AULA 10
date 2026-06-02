@@ -1,0 +1,63 @@
+1)
+print("---LADOS DE UM TRIÂNGULO---")
+l1 = int(input("Insira a medida do Lado 1:"))
+l2 = int(input("Insira a medida do Lado 2:"))
+l3 = int(input("Insira a medida do Lado 3:"))
+if l1+l2>l3 and l2+l3>l1 and l1+l3>l2:
+    if l1==l2==l3: 
+        print("Triângulo Equilatero")
+    elif l1==l2 or l1==l3 or l2==l3:
+        print("Triângulo Isóceles")
+    else:
+        print("Triângulo Escaleno")
+else: 
+    print("Não forma um triângulo")
+------------------------------------------------------------------------------------------------------------------------------
+2)
+valor_imovel = float(input("Digite o Valor do Imóvel: R$"))
+salario = float(input("Digite seu salário: R$"))
+idade = int(input("Digite sua idade:"))
+prazo = int(input("Digite o prazo em ANOS:"))
+prestacao = valor_imovel/(prazo*12)
+if idade < 60:
+    limite = salario*0.30
+else:
+    limite = salario*0.35
+if prestacao<=limite:
+    print("Financiamento aprovado: R$", prestacao)
+else:
+    print("Financiamento negado!")
+------------------------------------------------------------------------------------------------------------------------------
+3)
+temperatura = float(input("Digite a temperatura: "))
+chuva = input("Está chovendo(sim/não): ")
+if temperatura<15 and chuva=="sim":
+    print("Casaco impermeável e bota")
+elif temperatura<15 and chuva=="não":
+    print("Casaco Pesado")
+elif temperatura>15 and chuva=="sim":
+    print("Guarda Chuva")
+else:
+    print("Roupas Leves")
+------------------------------------------------------------------------------------------------------------------------------
+4)
+valor_imovel = float(input("Digite o Valor do Imóvel: R$"))
+salario = float(input("Digite seu salário: R$"))
+idade = int(input("Digite a idade do comprador:"))
+prazo = int(input("Digite o prazo em ANOS:"))
+valor_entrada = float(input("Digite o valor de estrada: R$"))
+minimo = valor_imovel *0.10
+if prazo > 30 or valor_entrada < minimo:
+    print("Financiamento negado")
+else:
+    valor_financiado = valor_imovel - valor_entrada
+    prestacao = valor_imovel/(prazo*12)
+    if idade < 60:
+        limite = salario*0.30
+    else:
+        limite = salario*0.35
+    if prestacao<=limite:
+        print("Financiamento aprovado")
+    else:
+        print("Financiamento negado!")
+print("Valor da prestação mensal: R$",prestacao)
