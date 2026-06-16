@@ -1,0 +1,20 @@
+aprovado = 0
+negado = 0
+while True: 
+    nome = input("DIGITE SEU NOME:")
+    idade = int(input("DIGITE SUA IDADE:"))
+    if idade >=18:
+        print(nome," APROVADO")
+        aprovado +=1
+    else:
+        print(nome," NEGADO")
+        negado +=1
+    seguir = input("DESEJA CADASTRAR MAIS PESSOAS(S/N)?:").upper()
+    while seguir != "S" and seguir != "N":
+        print("OPÇÃO INVÁLIDA!")
+        seguir = input("DESEJA CADASTRAR MAIS PESSOAS(S/N)?:").upper()
+    if seguir == "N":
+        break
+print("----APROVADOS E REPROVADOS----")
+print("APROVADOS:",aprovado)
+print("NEGADOS:",negado)
